@@ -1,0 +1,20 @@
+{
+  conic_123.m
+  g2twists.m
+
+  cm-numerical.m
+  cm-galois.m
+  cm.m
+  reflex.m
+  smallcl.m
+
+  findg2.m
+  findg3-streng.m
+  findg3.m
+
+  rosenhains.m
+  invariants.m
+
+  isogenies.m
+  conics.m
+}

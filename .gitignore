@@ -1,0 +1,9 @@
+# Secondary files
+**/*.swp
+**/*~
+**/*.sage.py
+**/*.pyc
+**/*.sig
+
+# Data
+examples/parallel_big
