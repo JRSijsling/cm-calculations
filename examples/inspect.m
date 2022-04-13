@@ -1,5 +1,5 @@
-load "results.m";
-load "fields.m";
+load "D6/results.m";
+load "D6/fields.m";
 Q := NumberField(x^2 + 1);
 counter := 0;
 for tup in L do
@@ -11,3 +11,4 @@ for tup in L do
         print K;
     end if;
 end for;
+print counter;

@@ -1,9 +1,10 @@
 SetSeed(1);
-SetVerbose("EndoFind", 3);
-SetVerbose("CurveRec", 2);
+SetVerbose("EndoFind", 0);
+SetVerbose("CurveRec", 0);
 SetVerbose("CMExp", 2);
 SetClassGroupBounds("GRH");
 load "D6/fields.m";
+print "This takes a long time!";
 
 prec := 4300;
 precred := 500;

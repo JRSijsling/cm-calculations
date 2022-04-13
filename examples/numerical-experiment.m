@@ -43,11 +43,11 @@ f := x^6 - 2*x^5 - 70*x^4 + 96*x^3 + 2245*x^2 - 1598*x + 20192;
 K := NumberFieldExtra(f : prec := 4000);
 print "K", K;
 Phis := AllCMTypes(K);
-Phi := Phis[1];
+Phi := Phis[2];
 
 /* We construct the reflex field as a subfield of CC, that is, as a number
  * field together with an embedding into CC */
-time Kr := NumericalReflexField(K, Phi);
+time Kr := NumericalReflexField(Phi, K);
 Phisr := AllCMTypes(Kr);
 print "Kr", Kr;
 
@@ -78,7 +78,7 @@ for i in [1..#Phisr] do
         for genr in gensr do
             /* NOTE: The mistake is here, as the type norms of generators may not suffice a priori */
             /* Should think about this */
-            gengensCC := [ &*[ EmbedExtra(gengenr : iota := iotar) : iotar in Phir ] : gengenr in Generators(phiClr(genr)) ];
+            gengensCC := [ &*[ EmbedExtra(Kr ! gengenr : iota := iotar) : iotar in Phir ] : gengenr in Generators(phiClr(genr)) ];
             gengens := [ ];
             for gengenCC in gengensCC do
                 stop := false;

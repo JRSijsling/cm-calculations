@@ -10,7 +10,7 @@ load "C6/fields.m";
 prec := 1200;
 F := RationalsExtra(prec);
 R<x> := PolynomialRing(F);
-f := x^6 + 10 *x^4 + 21 *x^2 + 4;
+f := data[12][2];
 K := NumberFieldExtra(f);
 Phis := AllCMTypes(K : Galois := true, Primitive := true);
 PhiK := Phis[1];

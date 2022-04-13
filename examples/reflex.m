@@ -5,7 +5,7 @@ SetVerbose("CMExp", 1);
 SetClassGroupBounds("GRH");
 
 R<x> := PolynomialRing(Rationals());
-load "SS/fields.m";
+load "C6/fields.m";
 
 prec := 1200;
 for i in [1..#data] do
